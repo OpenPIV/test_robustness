@@ -8,6 +8,7 @@ the change in the decision of what defines the final grid, the `search_area_size
 if the last one is larger (what is called extended search). So now the window in frame B is always symmetric around window in frame A, thus we do not introduce bias at the edges of the images. 
 
 Additional change is the intensity capping that is easy to remove, but to do so wisely (there is also a pending pull request of `normalized_correlation` see https://github.com/OpenPIV/openpiv-python/tree/normalized_correlation) but this one maybe more robust but fails some tests. Without understanding the reason, we might find ourselves in another bug issue. 
+We also opened just this "small" change with the new pull request - how to compare the two? https://github.com/OpenPIV/openpiv-python/tree/remove_capping
 
 ## What to do:
 1. Create Jupyter notebook that reads the data, installs the right version of openpiv-python and runs all the tests
