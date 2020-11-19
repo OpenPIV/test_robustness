@@ -23,8 +23,9 @@
 
 3. In the Jupyter notebook always start with: 
 ```
-    # %load_ext watermark
-    %watermark -v -m -p numpy,openpiv -g
+    # %load_ext watermark # if it's a first time
+    %reload_ext watermark # else
+    %watermark -v -m -p numpy,openpiv -g -b
 ```
 
 
